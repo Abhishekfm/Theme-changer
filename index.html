@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Theme Toggler</title>
+</head>
+<body>
+    <section class="sect">
+        <section class="main-hero">
+            <div class="card">
+                <img src="assets/dog.jpg" alt="">
+                <div class="hero-content">
+                    <h1>Some Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, similique. A, nostrum? Iusto, aliquam animi.</p>
+                    <div>
+                        <button class="sbmt-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="before_ham">
+            <img class="ham before_click_ham" src="assets/before_click.png" alt="">
+        </div>
+        <div class="theme-div hidden">
+            <div>
+                <img class="ham after_click_ham" src="assets/after_click.png" alt="">
+            </div>
+            <div class="make-center">
+                <h1 class="switch">Switch Theme</h1>
+            </div>
+            <div class="fit-in">
+                <h1>Light</h1>
+                <img class="ham light" src="assets/light.png" onclick="change_to_dark()" alt="">
+                <img class="ham dark hidden" src="assets/dark.png" onclick="change_to_light()" alt="">
+                <h1>Dark</h1>
+            </div>
+            <div class="make-center">
+                <h1 class="pick-me">Pick Color</h1>
+            </div>
+            <div class="grid-color">
+                <div class="_1" onclick="changeTheme('#207BB9')"></div>
+                <div class="_2" onclick="changeTheme('#1C9B5F')"></div>
+                <div class="_3" onclick="changeTheme('#924FAD')"></div>
+                <div class="_4" onclick="changeTheme('#FFA200')"></div>
+                <div class="_5" onclick="changeTheme('#03AAB5')"></div>
+                <div class="_6" onclick="changeTheme('#FCCC1D')"></div>
+                <div class="_7" onclick="changeTheme('#FE1A2D')"></div>
+                <div class="_8" onclick="changeTheme('#F5558F')"></div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
